@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Been | Graphic Designer Portfolio</title>
+    <style>
+        /* --- RESET & BASIC STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- NAVBAR --- */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #111;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #111;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            max-width: 1100px;
+            margin: 120px auto 60px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #111;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- PORTFOLIO GRID --- */
+        .portfolio {
+            max-width: 1100px;
+            margin: 0 auto 80px auto;
+            padding: 0 20px;
+        }
+
+        .portfolio h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .item-info {
+            padding: 20px;
+        }
+
+        .item-info h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #111;
+        }
+
+        .item-info p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* --- CONTACT --- */
+        .contact {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #aaa;
+            margin-bottom: 25px;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: #fff;
+            color: #111;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-contact:hover {
+            background-color: #ddd;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 36px; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">BEEN.</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#work">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Halo, Saya Been.</h1>
+        <p>Seorang Graphic Designer yang berfokus pada pembuatan identitas visual, ilustrasi digital, dan aset kreatif yang fungsional sekaligus estetik.</p>
+    </section>
+
+    <section class="portfolio" id="work">
+        <h2>Karya Terbaru</h2>
+        
+        <div class="grid">
+            <div class="portfolio-item">
+                <img src="link-foto-karyamu1.jpg" alt="Desain Logo">
+                <div class="item-info">
+                    <h3>Brand Identity - Edik Pro</h3>
+                    <p>Konsep logo modern dan minimalis untuk industri audio.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="link-foto-karyamu2.jpg" alt="Desain Flyer">
+                <div class="item-info">
+                    <h3>Promotional Flyer</h3>
+                    <p>Desain brosur digital kreatif untuk persewaan busana.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="link-foto-karyamu3.jpg" alt="Vektor Ilustrasi">
+                <div class="item-info">
+                    <h3>Digital Illustration</h3>
+                    <p>Eksplorasi gaya artwork halftone dots dan envelope distort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Tertarik Kerja Sama?</h2>
+        <p>Mari diskusikan project hebat Anda berikutnya bersama saya.</p>
+        <a href="mailto:emailkamu@gmail.com" class="btn-contact">Hubungi Via Email</a>
+        
+        <footer>
+            <p>&copy; 2026 Been. All Rights Reserved.</p>
+        </footer>
+    </section>
+
+</body>
+</html>
